@@ -1,11 +1,9 @@
 package com.company;
 
-import java.util.ArrayList;
-import java.util.List;
 
-public class Calc<T extends Number> {
+public class Calc<TFirst extends Number, TSecond extends  Number, TThird extends  Number> {
 
-    public <T extends Number> double sum (T number1, T number2, T number3) {
+    public double sum (TFirst number1, TSecond number2, TThird number3) {
         return number1.doubleValue() + number2.doubleValue() + number3.doubleValue();
     }
 
